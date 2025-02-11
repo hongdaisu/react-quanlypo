@@ -1,0 +1,137 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.btn-edit {
+    // width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: orange;
+
+    &:hover {
+        background-color: transparent !important;
+        color: orange !important;
+    }
+}
+
+.btn-delete {
+    // width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(230, 30, 30);
+
+    &:hover {
+        background-color: transparent !important;
+        color: rgb(230, 30, 30) !important;
+    }
+}
+
+.modal-user-container {
+    .modal-content {
+        .modal-header {
+            button {
+                background-color: transparent !important;
+                color: white;
+                border: none;
+                font-size: 27px;
+            }
+        }
+    }
+
+    .modal-user-body {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+
+            &.max-w {
+                width: 100%;
+            }
+
+            input {
+                border-radius: 3px;
+                height: 30px;
+                padding: 0 10px;
+                outline: none;
+                border: 1px solid gray;
+            }
+        }
+    }
+}
+.modal-footer{
+    padding: 0.0rem !important;
+}
+
+.grid-container {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.ag-theme-alpine{
+    padding-top: 10px !important;
+    // margin-left: 40px;
+    // margin-right: 20px ;
+}
+
+.btn-new {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    margin-left: 5px !important;
+    margin-bottom: 1px;
+}
+
+// .btn-xoa-search {
+//     margin-left: -20px;
+//     padding: 0 5px;
+//     height: 20px;
+//     border: none;
+//     color: black;
+//     background: transparent;
+//     cursor: pointer;
+
+//     i {
+//         font-size: 14px; // Bạn có thể điều chỉnh kích thước icon nếu cần
+//     }
+//     &:hover {
+//         color: red; 
+//         transform: scaleX(1.1) scaleY(1.1);
+//     }
+// }
+// .input-search{
+//     input:focus {
+//         border-color: rgb(203, 225, 242) !important ; /* Màu border bạn muốn áp dụng */
+//         box-shadow: 0 0 5px rgb(179, 246, 179) !important  ; /* Hiệu ứng bóng */
+//         outline: none !important; /* Loại bỏ viền khi focus */
+//     }
+// }

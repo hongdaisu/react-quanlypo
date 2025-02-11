@@ -1,0 +1,109 @@
+// .navbar-light .navbar-nav .nav-link.active {
+//     color: #FAFAFA ;
+//     // list-style: none;
+//     // text-decoration: underline;
+//     // display: flex;
+// }
+
+// .navbar-light .navbar-nav .nav-link:focus{
+//     // color: red !important;
+//     text-decoration: underline;
+// }
+// .dropdown-item.active{
+//     background-color:rgba(255, 255, 255, 0.5) !important;
+// }
+
+// .navbar-light .navbar-nav .nav-link {
+//     color: black !important ;
+//     letter-spacing: 0.5px;
+// }
+
+.navbar-nav .nav-link {
+    color: black !important ;
+    letter-spacing: 0.2px;
+    // font-weight: bold;
+    font-size: 17px;
+}
+
+
+.header-container {
+    // z-index: 1000;
+    // display: flex;
+    justify-content: space-between;
+    background-color: #3D8361;
+    // color: yellow ;
+    height: 50px;
+    position: relative;
+    // position: fixed;
+    top: 0;
+     //.header-menu{
+    //     color:#FAFAFA  !important ;
+    //     letter-spacing: 0.5px !important ;
+     //}
+    // .navbar-light .navbar-nav .nav-link {
+    //     color: #0f0d0d !important ;
+    //     letter-spacing: 0.5px !important ;
+    // }
+    .dropdown-menu {
+        background-color: #c5eeda !important;
+    }
+
+    .dropdown-item.active, .dropdown-item:active {
+        // color: #fff;
+        text-decoration: none;
+        background-color: #e3e8e5;
+        // text-decoration: underline;
+    }
+
+    .navbar-light .navbar-nav .nav-link:focus{
+        // color: red !important;
+        transform: scaleX(1) scaleY(1.2);
+        // .faicon{
+        //     margin-right: 8px;
+        //     // display: none;
+        // }
+        // text-decoration: underline;
+    }
+
+    .faicon{
+        margin-right: 8px;
+    }
+
+    .btn-logout {
+        // color: $common-text-color;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 10px;
+        display: flex;
+
+        .logout{
+            display: flex;
+
+        // .dropdown-menu.show {
+        //     right: 4px !important;
+        //     left: auto !important;
+        //     }
+        }
+
+        // &:hover {
+        //     background-color: darken($colormain, 5);
+        // }
+
+        // i {
+        //     font-size: 1px;
+        // }
+    }
+
+    .welcom {
+        margin-right: 20px;
+    }
+}
+
+// /* Hiệu ứng hover cho NavDropdown */
+.navbar-nav .nav-link:hover {
+    color: black !important;
+    // background-color: #fff;
+    transform: scaleX(1) scaleY(1.1);
+  }
+// }
+
