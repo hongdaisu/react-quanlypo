@@ -1,0 +1,167 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.btn-edit {
+    // width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: orange;
+
+    &:hover {
+        background-color: transparent !important;
+        color: orange !important;
+    }
+}
+
+.btn-edit-menu {
+    margin-left: -8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: orange;
+
+    &:hover {
+        background-color: transparent !important;
+        color: orange !important;
+    }
+}
+
+.btn-delete {
+    // width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(230, 30, 30);
+
+    &:hover {
+        background-color: transparent !important;
+        color: rgb(230, 30, 30) !important;
+    }
+}
+
+// .modal-user-container {
+//     .modal-content {
+//         .modal-header {
+//             button {
+//                 background-color: transparent !important;
+//                 color: white;
+//                 border: none;
+//                 font-size: 27px;
+//             }
+//         }
+//     }
+
+//     .modal-user-body {
+//         display: flex;
+//         gap: 15px;
+//         flex-wrap: wrap;
+
+//         .input-container {
+//             display: flex;
+//             flex-direction: column;
+//             width: 49%;
+
+//             &.max-w {
+//                 width: 100%;
+//             }
+
+//             input {
+//                 border-radius: 3px !important;
+//                 height: 38px !important;
+//                 padding: 0 10px;
+//                 outline: none;
+//                 border: 0.1px solid #d7cdcd  !important;
+//             }
+//         }
+//         label {
+//             font-weight: bold;
+//             /* Các thuộc tính CSS khác nếu cần */
+//         }
+//         .select-container{
+//             width: 49%;
+//             // height: 30px;
+//         }
+//     }
+// }
+.modal-footer{
+    padding: 0.0rem !important;
+}
+
+.lable-i{
+    color: red;
+    font-size: 18px;
+}
+
+.top-input{
+    margin-top: 4px;
+}
+
+// .select-container-user{
+//     width: 120%;
+//     // height: 30px;
+// }
+
+.input-user{
+    width: 14%;
+    height: calc(1rem + 2px);
+    background: transparent;
+    border-radius: 100px;
+    border: 1px solid blue;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    padding: 5px 5px 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 4px;
+}
+.grid-container {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.ag-theme-alpine{
+    padding-top: 10px !important;
+    // margin-left: 40px;
+    // margin-right: 20px ;
+}
+
+.btn-new {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    margin-left: 5px !important;
+    margin-bottom: 1px;
+}
+
+.left-align-cell {
+    margin-left: -20px; /* Khoảng cách từ lề trái */
+    text-align: left;  /* Đảm bảo căn chỉnh văn bản sang trái */
+}

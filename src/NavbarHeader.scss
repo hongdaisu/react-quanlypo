@@ -1,0 +1,11 @@
+.icon-hover:hover {
+    cursor: pointer;
+    transform: scaleX(1.2) scaleY(1.2);
+    transition: transform 0.5s;
+    color: yellow;
+}
+
+.navbar-brand{
+    margin-left: -12px;
+    font-size: 20px
+}

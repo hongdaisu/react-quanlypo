@@ -1,0 +1,22 @@
+.ag-header.ag-header-allow-overflow .ag-header-row {
+    font-size: 11px !important;
+}
+
+.ag-row {
+    font-size: 12px !important;
+}
+
+.header-wrap {
+    white-space: normal; /* Cho phép xuống hàng */
+    word-wrap: break-word; /* Ngắt từ nếu cần */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.btn-action{
+    margin-left: -5px;
+}
+
+.btn-action-modal{
+    margin-left: 1px;
+}
+

@@ -1,0 +1,81 @@
+// @import "../styles/common.scss";
+@import "../../styles/common.scss";
+
+.login-background {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+    .login-alert {
+        width: 350px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 95px;
+        height: 80px;
+        .thongbao1 {
+            color: red;
+            font-weight: bold; 
+            text-align: center !important; 
+            margin-top: 4px;
+          }
+        .thongbao2 {
+            // color: red;
+            // font-weight: bold; 
+            text-align: center !important; 
+            margin-top: 4px;
+          }
+    }
+    .login-container {
+        width: 350px;
+        height: auto;
+        margin: 0 auto;
+        //background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 280px;
+        z-index: 2; /* Quan trọng: Để form không bị ảnh hưởng bởi lớp mờ */
+        background: rgba(255, 255, 255, 0.8); /* Nếu cần nền riêng cho form */
+
+        .login-content {
+            padding: 10px;
+
+            .text-login {
+                text-align: center;
+                font-weight: 600;
+                font-size: 24px;
+                padding-top: 10px;
+            }
+
+            .login-input {
+                margin: 7px 0;
+
+                .custum-input-password {
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        right: 5px;
+                        top: 35px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .btn-login {
+                width: 100%;
+                margin: 10px 0;
+                height: 30px;
+                border-radius: 15px;
+                color: white;
+                outline: none;
+                border: none;
+                background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            }
+        }
+    }
+}

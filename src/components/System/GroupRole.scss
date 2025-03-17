@@ -1,0 +1,212 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.container-top{
+    margin-top: 5px;
+}
+
+.closebtn{
+    background-color: #adb1b5;
+    border-color: #adb1b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 45px;
+    &:hover{
+        color: #fff;
+        background-color:#94979b!important;
+        border-color: #0b1ec1 !important;
+    }
+ }
+
+.container-xacnhan-xoa{
+    padding: 16px;
+    text-align: center;
+    .yesbtn{
+       background-color:#0f6df5;
+       font-size: 12px;
+       width: 40px;
+       justify-content: center;
+       align-items: center;
+       &:hover{
+        color: #fff;
+        background-color: #0b5ed7 !important;
+        border-color: #0b1ec1 !important;
+    }
+    }
+    .nobtn{
+        background-color: #adb1b5;
+        border-color: #adb1b5;
+        font-size: 12px;
+        width: 40px;
+        margin-left: 4px;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+        color: #fff;
+        background-color:#94979b!important;
+        border-color: #0b1ec1 !important;
+    }
+     }
+}
+
+.container-xacnhan-themtaisan{
+    padding: 1px;
+    text-align: center;
+    .yesbtn{
+       background-color:#0f6df5;
+       &:hover{
+        color: #fff;
+        background-color: #0b5ed7 !important;
+        border-color: #0b1ec1 !important;
+    }
+    }
+    .nobtn{
+        background-color: #adb1b5;
+        border-color: #adb1b5;
+        &:hover{
+        color: #fff;
+        background-color:#94979b!important;
+        border-color: #0b1ec1 !important;
+    }
+     }
+}
+
+.btn-edit {
+    // width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: orange;
+
+    &:hover {
+        background-color: transparent !important;
+        color: orange !important;
+        transform: scaleX(1.5) scaleY(1.5);
+    }
+}
+
+.btn-delete {
+    // width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(230, 30, 30);
+
+    &:hover {
+        background-color: transparent !important;
+        color: rgb(230, 30, 30) !important;
+        transform: scaleX(1.5) scaleY(1.5);
+    }
+}
+
+.modal-user-container {
+    .modal-content {
+        .modal-header {
+            button {
+                background-color: transparent !important;
+                color: white;
+                border: none;
+                font-size: 27px;
+            }
+        }
+    }
+}
+.input-container{
+    margin-bottom: 10px;
+}
+.modal-footer{
+    padding: 0.0rem !important;
+}
+
+// .button-new{
+//     margin: 0;
+//     font-size:15px;
+//     // font-weight: bold;
+//     font-style: normal;
+// }
+
+.button-save{
+    margin: 0;
+    font-size:15px;
+    // font-weight: bold;
+    font-style: normal;
+}
+
+.savebtn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 45px;
+    &:hover{
+        transform: scaleX(1.1) scaleY(1.1);
+    }
+ }
+
+.btn-primary:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+    }
+
+.btn-role {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    margin-left: 0px !important;
+    margin-bottom: 1px;
+    // padding: 10px;
+}
+//opacity
+
+
+.grid-container {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.ag-theme-alpine{
+    padding-top: 10px !important;
+    // margin-left: 40px;
+    // margin-right: 20px ;
+}
+
+.button-new {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    margin-left: 5px !important;
+    margin-bottom: 1px;
+}
+
+// .button-new{
+//     margin: 0;
+//     font-size:15px;
+//     // font-weight: bold;
+//     font-style: normal;
+// }
