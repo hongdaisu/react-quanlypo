@@ -402,7 +402,15 @@ const Role = (props) => {
                     <div className='row'> */}
             <div className='row grid-container'>
                 <div className='col-6' style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-                    <div className="row d-flex input-row-phanquyen">
+                    <div className='btn-new'>
+                        <button className='btn btn-primary px-1 full-button'
+                            onClick={() => handleNewRole()}
+                        ><i className='button-new'>Thêm mới</i></button>
+                        <button className='btn btn-primary px-4 full-button'
+                            onClick={() => handleSaveRole()}
+                        ><i className='button-new'>Lưu</i></button>
+                    </div>
+                    {/* <div className="row d-flex input-row-phanquyen">
                         <div className="col-md-2 d-flex">
                             <button
                                 type="button"
@@ -419,7 +427,7 @@ const Role = (props) => {
                                 <i className='button-new'>Lưu</i>
                             </button>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <div className="row d-flex input-row-dongbo">
                         <div className='mx-1 btn-role'>
                             <button className='btn btn-primary px-1 full-button'

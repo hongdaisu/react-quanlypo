@@ -28,8 +28,9 @@
   }
   
   .sidebar-hidden {
-      width: 3%; /* Sidebar thu nhỏ về 0 khi ẩn */
-      // transition: transform 0.5s ease !important;
+    //width: 3%; /* Sidebar thu nhỏ về 0 khi ẩn */
+    width: auto;
+    // transition: transform 0.5s ease !important;
   }
 
     // .sidebar {
@@ -672,11 +673,9 @@
     .btn-new {
         display: flex;
         justify-content: space-between;
-        padding-top: 6px;
-        margin-left: -1px !important;
-        margin-bottom: 1px;
-        // width: 100px;
-        // height: 35px;
+        padding-top: 4px;
+        //margin-left: -1px !important;
+        margin-bottom: -5px;
     }
 
     .ag-root-wrapper {
@@ -687,12 +686,13 @@
         overflow: hidden;
         //border: 1px dashed blue !important;
         box-shadow: 0 0 0 1px rgba(86, 86, 236, 0.5) !important;
+        margin-left: 5px !important;
     }
 
     
     .grid-container-tiepnhan {
-        //margin-right: 20px;
-        margin-left: 4px;
+        margin-left: auto;
+        //margin-left: 5px;
     }
 
     .row-tiepnhan {
@@ -701,14 +701,13 @@
         align-items: center;
         flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu không đủ chỗ */
         gap: 1px; /* Khoảng cách giữa các phần tử */
-        //border-radius: 5px;
-        //border: 1px dashed blue;
         box-shadow: 0 0 0 1px rgba(86, 86, 236, 0.5);
-        //height: 50px;
         width:100% !important;
-        //margin-left: 10px;
         box-sizing: border-box;
-        padding: 1px;
+        //padding: 1px;
+        padding-left: 6px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         background-color: #adb1ad;
         margin-left: 0px;
     }
@@ -876,4 +875,18 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.7); /* Điều chỉnh mức độ mờ */
     z-index: 1;
+}
+
+.me-2 {
+    margin-right: 0.4rem !important;
+}
+
+.ag-header.ag-pivot-off.ag-header-allow-overflow {
+    background-color: #ddf4f4;
+    height: 80px !important;
+    min-height: 80px !important;
+}
+
+.ag-header-row-column-filter{
+    height: 32px !important;
 }

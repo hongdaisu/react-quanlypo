@@ -356,7 +356,7 @@ const Menu = (props) => {
                                 onClick={() => handleNewMenuCha()}
                             ><i className='button-new'>Thêm mới</i></button>
                         </div> */}
-                    <div className="row d-flex input-row-phanquyen">
+                    {/* <div className="row d-flex input-row-phanquyen">
                         <div className="col-md-2 d-flex">
                             <button
                                 type="button"
@@ -366,6 +366,11 @@ const Menu = (props) => {
                                 <i className='button-new'>Thêm mới</i>
                             </button>
                         </div>
+                    </div> */}
+                    <div className='btn-new'>
+                        <button className='btn btn-primary px-1 full-button'
+                            onClick={() => handleNewMenuCha()}
+                        ><i className='button-new'>Thêm mới</i></button>
                     </div>
                     <div>
                         <ModalNewMenuCha
@@ -416,12 +421,17 @@ const Menu = (props) => {
                     </div> */}
                 </div>
                 <div className='col-8' style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-                    <div className="row d-flex input-row-phanquyen">
+                    {/* <div className="row d-flex input-row-phanquyen">
                         <div className='col-md-2 d-flex'>
                             <button className='btn btn-primary px-1 button-import me-2'
                                 onClick={() => handleNewMenuCon()}
                             ><i className='button-new'>Thêm mới</i></button>
                         </div>
+                    </div> */}
+                    <div className='btn-new'>
+                        <button className='btn btn-primary px-1 full-button'
+                            onClick={() => handleNewMenuCon()}
+                        ><i className='button-new'>Thêm mới</i></button>
                     </div>
                     <div>
                         <ModalNewMenuCon

@@ -131,7 +131,12 @@ const Group = (props) => {
                     <div className='row'> */}
             <div className='row grid-container'>
                 <div className='col-12'>
-                    <div className="row d-flex input-row-phanquyen">
+                    <div className='btn-new'>
+                        <button className='btn btn-primary px-1 full-button'
+                            onClick={() => handleNewGroup()}
+                        ><i className='button-new'>Thêm mới</i></button>
+                    </div>
+                    {/* <div className="row d-flex input-row-phanquyen">
                         <div className="col-md-2 d-flex">
                             <button
                                 type="button"
@@ -141,7 +146,7 @@ const Group = (props) => {
                                 <i className='button-new'>Thêm mới</i>
                             </button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 {/* <div className='mx-1'>
                     <button className='btn btn-primary px-1 full-button'
