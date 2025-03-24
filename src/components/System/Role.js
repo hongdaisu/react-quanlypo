@@ -410,34 +410,6 @@ const Role = (props) => {
                             onClick={() => handleSaveRole()}
                         ><i className='button-new'>Lưu</i></button>
                     </div>
-                    {/* <div className="row d-flex input-row-phanquyen">
-                        <div className="col-md-2 d-flex">
-                            <button
-                                type="button"
-                                className="btn btn-primary px-1 button-import me-2"
-                                onClick={handleNewRole}
-                            >
-                                <i className='button-new'>Thêm mới</i>
-                            </button>
-                            <button
-                                type="button"
-                                className="btn btn-primary px-1 button-import ms-auto"
-                                onClick={handleSaveRole}
-                            >
-                                <i className='button-new'>Lưu</i>
-                            </button>
-                        </div>
-                    </div> */}
-                    {/* <div className="row d-flex input-row-dongbo">
-                        <div className='mx-1 btn-role'>
-                            <button className='btn btn-primary px-1 full-button'
-                                onClick={() => handleNewRole()}
-                            ><i className='button-new'>Thêm mới</i></button>
-                            <button className='btn btn-primary px-4 full-button'
-                                onClick={() => handleSaveRole()}
-                            ><i className='button-new'>Lưu</i></button>
-                        </div>
-                    </div> */}
                     <div>
                         <ModalNewRole
                             show={showModalNewRole}
@@ -469,19 +441,11 @@ const Role = (props) => {
                                 defaultColDef={defaultColDef}
                                 pagination={true}
                                 paginationPageSize='20'
+                                immutableData={true} // Ngăn Ag-Grid render lại toàn bộ
+                                getRowId={(params) => params.data.id} // Xác định mỗi row bằng ID
                             />
                         </div>
                     </div>
-                    {/* <div className="ag-theme-alpine" id='myGrid' style={{ height: '78vh', width: '100%' }}
-                    >
-                        <AgGridReact
-                            rowData={rowData}
-                            columnDefs={columnDefs}
-                            defaultColDef={defaultColDef}
-                            pagination={true}
-                            paginationPageSize='20'
-                        />
-                    </div> */}
                 </div>
                 <div className='col-6'>
                     <Group

@@ -224,11 +224,22 @@ const DmNhanVien = () => {
                 content="Xóa"
             />
             <div className='row grid-container'>
-                <div className=' btn-new'>
-                    <button className='btn btn-primary px-1 full-button'
-                        onClick={() => handleNewNhanVien()}
-                    ><i className='button-new'>Thêm mới</i></button>
+                {/* <div className="ag-theme-alpine container" id='myGrid' style={containerStyle}> */}
+                <div className="ag-theme-alpine container" id='myGrid' style={gridStyle}>
+                    <div className=' btn-new-add'>
+                        <button className='btn btn-primary px-1 full-button'
+                            onClick={() => handleNewNhanVien()}
+                        ><i className='button-new'>Thêm mới</i></button>
+                    </div>
+                    <AgGridReact
+                        rowData={rowData}
+                        columnDefs={columnDefs}
+                        defaultColDef={defaultColDef}
+                        pagination={true}
+                        paginationPageSize='20'
+                    />
                 </div>
+                {/* </div> */}
                 <div>
                     <ModalNewNhanVien
                         show={showModalNewNhanVien}
@@ -255,17 +266,6 @@ const DmNhanVien = () => {
                         socket={socket}
                     />
                 </div>
-                {/* <div className="ag-theme-alpine container" id='myGrid' style={containerStyle}> */}
-                <div className="ag-theme-alpine container" id='myGrid' style={gridStyle}>
-                    <AgGridReact
-                        rowData={rowData}
-                        columnDefs={columnDefs}
-                        defaultColDef={defaultColDef}
-                        pagination={true}
-                        paginationPageSize='20'
-                    />
-                </div>
-                {/* </div> */}
             </div>
         </>
     )

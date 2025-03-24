@@ -34,6 +34,13 @@ const ModalLichSuXacNhan = (props) => {
             cellStyle: { whiteSpace: 'normal' },
         },
         {
+            headerName: 'Năm kiểm kê',
+            field: 'NamKiemKe',
+            //headerClass: 'header-wrap',
+            width: 130,
+            maxWidth: 130,
+        },
+        {
             headerName: 'Lần kiểm kê',
             field: 'LanKiemKe',
             //headerClass: 'header-wrap',
@@ -50,9 +57,8 @@ const ModalLichSuXacNhan = (props) => {
         {
             headerName: 'Ngày xác nhận',
             field: 'NgayXacNhanKiemKe',
-            width: 200,
-            maxWidth: 200,
-            maxWidth: 200,
+            width: 170,
+            maxWidth: 170,
             valueFormatter: (params) => {
                 // params.value là giá trị của ô
                 if (params.value === null) {
@@ -73,12 +79,12 @@ const ModalLichSuXacNhan = (props) => {
             width: 200,
             maxWidth: 200,
         },
-        {
-            headerName: 'Trạng thái',
-            field: 'TrangThai',
-            width: 120,
-            maxWidth: 120,
-        },
+        // {
+        //     headerName: 'Trạng thái',
+        //     field: 'TrangThai',
+        //     width: 120,
+        //     maxWidth: 120,
+        // },
     ]);
 
     const rowClassRules = {

@@ -31,7 +31,15 @@ const ModalLichSuKiemKe = (props) => {
             width: 300,
             maxWidth: 300,
             autoHeight: true,
+            pinned: 'left',
             cellStyle: { whiteSpace: 'normal' },
+        },
+        {
+            headerName: 'Năm kiểm kê',
+            field: 'NamKiemKe',
+            headerClass: 'header-wrap',
+            width: 100,
+            maxWidth: 100,
         },
         {
             headerName: 'Lần kiểm kê',

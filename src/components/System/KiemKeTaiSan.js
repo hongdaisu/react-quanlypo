@@ -436,6 +436,13 @@ const KiemKeTaiSan = () => {
             maxWidth: 100,
         },
         {
+            headerName: 'Năm kiểm kê',
+            field: 'NamKiemKe',
+            headerClass: 'header-wrap',
+            width: 100,
+            maxWidth: 100,
+        },
+        {
             headerName: 'Lần kiểm kê',
             field: 'LanKiemKe',
             headerClass: 'header-wrap',

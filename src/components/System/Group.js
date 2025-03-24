@@ -131,28 +131,25 @@ const Group = (props) => {
                     <div className='row'> */}
             <div className='row grid-container'>
                 <div className='col-12'>
-                    <div className='btn-new'>
-                        <button className='btn btn-primary px-1 full-button'
-                            onClick={() => handleNewGroup()}
-                        ><i className='button-new'>Thêm mới</i></button>
-                    </div>
-                    {/* <div className="row d-flex input-row-phanquyen">
-                        <div className="col-md-2 d-flex">
-                            <button
-                                type="button"
-                                className="btn btn-primary px-1 button-import me-2"
-                                onClick={handleNewGroup}
-                            >
-                                <i className='button-new'>Thêm mới</i>
-                            </button>
+                    {/* <div className="ag-theme-alpine container" id='myGrid' style={{ height: '78vh', width: '100%' }}> */}
+                    <div className="ag-theme-alpine container" id='myGrid' style={{ height: 'calc(100vh - 114px)', width: '100%' }}>
+                        <div className='btn-new-add'>
+                            <button className='btn btn-primary px-1 full-button'
+                                onClick={() => handleNewGroup()}
+                            ><i className='button-new'>Thêm mới</i></button>
                         </div>
-                    </div> */}
+                        <AgGridReact
+                            rowData={rowData}
+                            columnDefs={columnDefs}
+                            defaultColDef={defaultColDef}
+                            pagination={true}
+                            onSelectionChanged={onSelectionChanged}
+                            paginationPageSize='20'
+                            immutableData={true} // Ngăn Ag-Grid render lại toàn bộ
+                            getRowId={(params) => params.data.id} // Xác định mỗi row bằng ID
+                        />
+                    </div>
                 </div>
-                {/* <div className='mx-1'>
-                    <button className='btn btn-primary px-1 full-button'
-                        onClick={() => handleNewGroup()}
-                    ><i className='button-new'>Thêm mới</i></button>
-                </div> */}
                 <div>
                     <ModalEditGroup
                         show={showModalEditGroup}
@@ -174,16 +171,6 @@ const Group = (props) => {
                         dataXacNhanXoa={dataXacNhanXoa}
                         handleClose={handleClose}
                         getAllGroup={getAllGroup}
-                    />
-                </div>
-                <div className="ag-theme-alpine container" id='myGrid' style={{ height: '78vh', width: '100%' }}>
-                    <AgGridReact
-                        rowData={rowData}
-                        columnDefs={columnDefs}
-                        defaultColDef={defaultColDef}
-                        pagination={true}
-                        onSelectionChanged={onSelectionChanged}
-                        paginationPageSize='20'
                     />
                 </div>
             </div>

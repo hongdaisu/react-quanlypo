@@ -610,8 +610,8 @@
         justify-content: center;
         align-items: center;
         //width: 75px;
-        height: 35px;
-        //max-height: 80px;
+        height: 30px;
+        //border-radius: 10px;
         padding: 5px 10px;
     }
 
@@ -889,4 +889,12 @@
 
 .ag-header-row-column-filter{
     height: 32px !important;
+}
+
+.btn-new-add {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -6px;
+    padding-left: 4px;
+    margin-bottom: 5px;
 }
